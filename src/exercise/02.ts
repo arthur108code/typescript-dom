@@ -11,10 +11,12 @@ initExo2(divExoName)
 
 // 🐶 Ajoute une checkbox au formulaire
 // La premiere étape est de récuperer le formulaire
-const form = document.querySelector('form')
+const form = <HTMLFormElement>document.querySelector('form')
 
 // 🤖 créé un élément input type checkbox
-// const cb = ...
+const cb = document.createElement("INPUT");
+cb.setAttribute("type", "checkbox");
+form.appendChild(cb)
 
 // ⛏️ décommente pour ajouter le checkbox au formulaire
 //form.appendChild(cb)
