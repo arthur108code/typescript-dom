@@ -30,6 +30,8 @@ export const initExo1 = (label = 'formExo') => {
   form.setAttribute('id', label)
   const input = document.createElement('input')
   input.setAttribute('type', 'text')
+  input.value = 'Mike'
+
   // const button = document.createElement('input')
   // button.setAttribute('type', 'submit')
   // button.value = 'envoyer'
