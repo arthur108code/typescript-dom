@@ -11,14 +11,13 @@ initExo2(divExoName)
 
 // 🐶 récupurère tous les champs 'input' avec "querySelectorAll"
 // 🤖
-// const inputs
+const inputs = document.querySelectorAll('input')
 
 // 🐶 parcours la liste avec foreach
 // 🤖
-// inputs.forEach(el => {
-//   verifie si le type == text
-//   si oui change le type = color
-// })
+inputs.forEach(el => {
+  if (el.type == "text") el.type = "color"
+})
 
 /*
 eslint
